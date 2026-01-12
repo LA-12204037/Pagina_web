@@ -1,0 +1,140 @@
+
+body {
+    font-family: 'Orbitron', sans-serif; /* fuente futurista */
+    margin: 0;
+    padding: 0;
+    background-image: url('https://wallpaper.dog/large/20698169.jpg'); /* tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #00FFFF; /* texto azul neón */
+}
+
+/* ===== Header futurista ===== */
+header {
+    text-align: center;
+    padding: 25px 0;
+    background: rgba(0, 0, 50, 0.7); /* semi-transparente oscuro */
+    box-shadow: 0 0 20px #00FFFF;    /* borde brillante */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #00FFFF;
+    text-shadow: 0 0 10px #00FFFF, 0 0 20px #0FF, 0 0 30px #00FFFF;
+}
+
+header p {
+    margin: 5px 0 0 0;
+    color: #00CCFF;
+    text-shadow: 0 0 8px #00CCFF;
+}
+
+/* ===== Tarjetas flotantes ===== */
+.card {
+    padding: 15px;
+    border-radius: 15px;
+    margin: 20px auto;        
+    width: 80%;                
+    max-width: 600px;          
+    background-color: rgba(0, 0, 80, 0.7); /* azul oscuro semitransparente */
+    box-shadow: 0 0 15px #00FFFF, 0 0 30px #0FF;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    text-align: center;
+}
+
+/* Hover suave con neón */
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 0 25px #00FFFF, 0 0 50px #0FF, 0 0 80px #00FFFF;
+    cursor: pointer;
+}
+
+/* ===== Sección de imágenes ===== */
+.imagen-seccion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.imagen-seccion img {
+    width: 100%;
+    max-width: 220px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00FFFF;
+}
+
+/* Texto dentro de las tarjetas */
+.texto-seccion {
+    margin-top: 10px;
+    text-align: center;
+    color: #00FFFF;
+    text-shadow: 0 0 5px #00FFFF;
+}
+
+/* ===== Botones circulares neon ===== */
+.boton-circular {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #00FFFF;
+    color: #000;
+    box-shadow: 0 0 10px #00FFFF, 0 0 20px #0FF, 0 0 30px #00FFFF;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.boton-circular:hover {
+    transform: scale(1.1);
+    background-color: #0FF;
+    box-shadow: 0 0 20px #00FFFF, 0 0 40px #0FF, 0 0 60px #00FFFF;
+}
+
+/* Contenedor de botones */
+.botones {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: rgba(0, 0, 50, 0.8);
+    color: #00FFFF;
+    font-family: 'Orbitron', sans-serif;
+    box-shadow: 0 0 15px #00FFFF;
+}
+
+footer a {
+    color: #0FF;
+    text-decoration: none;
+    margin: 0 5px;
+    text-shadow: 0 0 5px #00FFFF;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    .imagen-seccion img {
+        max-width: 90%;
+        height: auto;
+    }
+}
+

@@ -1,0 +1,11 @@
+:root {
+    --morado-claro-fondo: #F5E6FF;
+}
+
+body {
+    background-color: var(--morado-claro-fondo);
+}
+
+:root {
+    --morado-claro: #C39BD3;
+}
