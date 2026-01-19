@@ -2,99 +2,58 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Biografía</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía</title>
 
-    <!-- Variables y estilos globales -->
-    <link rel="stylesheet" href="estilo/variable.css">
     <link rel="stylesheet" href="estilo/global.css">
-
-    <!-- Layout -->
+    <link rel="stylesheet" href="estilo/variable.css">
     <link rel="stylesheet" href="layout/header/header.css">
     <link rel="stylesheet" href="layout/footer/footer.css">
-
-    <!-- Componentes -->
     <link rel="stylesheet" href="components/button/button.css">
 </head>
-<body>
 
-<header>
-    <h1>Mi Biografía</h1>
-    <p>Conociendo quién soy, mis gustos y mis metas</p>
+<body class="body-biografia">
+
+<header class="header">
+    <h1>📘 Mi Biografía</h1>
+    <nav>
+        <a href="index.html" class="btn">⬅ Volver</a>
+    </nav>
 </header>
 
-<main class="container">
+<main class="burbujas">
 
-    <section class="card sobre-mi">
-        <h2>👤 Sobre mí</h2>
-        <div class="imagen-seccion">
-            <img src="imagenes/images.png" alt="Foto personal">
-            <div class="texto-seccion">
-                <p>
-                    Hola me llamo Luciano Alberto Montufar Villalta. Tengo 18 años, nací en la Ciudad Capital.
-                    Me gusta jugar videojuegos, aprender Blender, animar, dibujar, coleccionar autos, leer y cuidar animales.
-                </p>
-            </div>
-        </div>
+    <section class="bubble left">
+        <img src="imagenes/logo.jpg" alt="Yo">
+        <h2>Quién Soy</h2>
+        <p>Soy Luciano Alberto Montufar Villalta Tengo 18 año naci el 20 de Diciembre del 2007 Soy una persona Empatica y paciente 
+           me gusta dibujar leer en pocas ocaciones ver peliculas de accion coleccionar autos soy sociable carismatico amable.</p>
     </section>
 
-    <section class="card gustos">
-        <h2>💜 Mis gustos</h2>
-        <div class="imagen-seccion">
-            <img src="imagenes/ac-dc-hisgway-to-hell-solo-subsonic.webp" alt="Música">
-            <img src="imagenes/enchiladas-comida-mexicana-1024x683.jpg" alt="Comida">
-        </div>
-        <div class="texto-seccion">
-            <ul>
-                <li>Me gusta casi toda la música: BMTH, ACDC, Red Hot Chili Peppers, Notorius B.I.G, MF DOOM</li>
-                <li>Me gusta conducir y ver ciudades desde miradores</li>
-                <li>Mis colores favoritos: morado, rosa, negro, blanco</li>
-            </ul>
-        </div>
+    <section class="bubble right">
+        <img src="imagenes/Iga.png" alt="Historia">
+        <h2>Mi Historia</h2>
+        <p>Naci un 20 de diciembre del 2007  entre a kinal en 2021 comenze a estudiar en el Iga clases de Ingles  trabajo los sabados y demas .</p>
     </section>
 
-    <section class="card hobbies">
-        <h2>🎯 Mis hobbies</h2>
-        <div class="imagen-seccion">
-            <img src="imagenes/B001GIUWX0.jpg" alt="Hobby">
-        </div>
-        <div class="texto-seccion">
-            <p>
-                Me gusta coleccionar autos HotWheels, cocinar y jugar en Nintendo y Steam.
-                Mis consolas favoritas: GBA, NES, WII, N64, SWITCH.
-            </p>
-        </div>
+    <section class="bubble left">
+        <img src="imagenes/japan.png" alt="Metas">
+        <h2>Mis Metas</h2>
+        <p>Mis metas es poder irme a Japon  conseguir un trabajo poder graduarme de UVDG .</p>
     </section>
 
-    <section class="card metas">
-        <h2>🌟 Metas y sueños</h2>
-        <div class="imagen-seccion">
-            <img src="imagenes/images.jpg" alt="Metas">
-        </div>
-        <div class="texto-seccion">
-            <p>
-                Mis sueños son salir de Kinal, entrar a UVG, viajar a Asia y Europa,
-                vivir en Japón, conseguir un trabajo y una casa propia.
-            </p>
-        </div>
-    </section>
-
-    <section class="card botones-navegacion">
-        <h2>🔗 Navegación rápida</h2>
-        <div class="botones">
-            <a href="index.html" class="boton-circular">Inicio</a>
-            <a href="kinal.html" class="boton-circular">Kinal</a>
-        </div>
+    <section class="bubble right">
+        <img src="imagenes/trabajo .webp" alt="Futuro">
+        <h2>Mi Futuro</h2>
+        <p>Ser una persona importante en un puesto y poder vivir una vida tranquila.</p>
     </section>
 
 </main>
 
-<footer>
-    <p>© 2026 - Mi Biografía Personal</p>
-    <p>
-        <a href="index.html">Inicio</a> | 
-        <a href="kinal.html">Kinal</a>
-    </p>
+<footer class="footer">
+    <p>© 2026 - Biografía</p>
 </footer>
 
+<script src="js/button.js"></script>
 </body>
 </html>

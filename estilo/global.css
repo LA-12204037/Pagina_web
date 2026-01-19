@@ -1,140 +1,177 @@
-
-body {
-    font-family: 'Orbitron', sans-serif; /* fuente futurista */
+* {
     margin: 0;
     padding: 0;
-    background-image: url('https://wallpaper.dog/large/20698169.jpg'); /* tu imagen de fondo */
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    color: white;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     background-attachment: fixed;
-    color: #00FFFF; /* texto azul neón */
 }
 
-/* ===== Header futurista ===== */
-header {
-    text-align: center;
-    padding: 25px 0;
-    background: rgba(0, 0, 50, 0.7); /* semi-transparente oscuro */
-    box-shadow: 0 0 20px #00FFFF;    /* borde brillante */
+/* FONDOS POR PÁGINA */
+
+.body-index {
+    background-image: url("../imagenes/Index.gif");
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    color: #00FFFF;
-    text-shadow: 0 0 10px #00FFFF, 0 0 20px #0FF, 0 0 30px #00FFFF;
+.body-biografia {
+    background-image: url("../imagenes/Biografia.gif");
 }
 
-header p {
-    margin: 5px 0 0 0;
-    color: #00CCFF;
-    text-shadow: 0 0 8px #00CCFF;
+.body-kinal {
+    background-image: url("../imagenes/kinal.avif");
 }
 
-/* ===== Tarjetas flotantes ===== */
-.card {
-    padding: 15px;
-    border-radius: 15px;
-    margin: 20px auto;        
-    width: 80%;                
-    max-width: 600px;          
-    background-color: rgba(0, 0, 80, 0.7); /* azul oscuro semitransparente */
-    box-shadow: 0 0 15px #00FFFF, 0 0 30px #0FF;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-    text-align: center;
-}
-
-/* Hover suave con neón */
-.card:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 0 25px #00FFFF, 0 0 50px #0FF, 0 0 80px #00FFFF;
-    cursor: pointer;
-}
-
-/* ===== Sección de imágenes ===== */
-.imagen-seccion {
+/* CONTENEDOR */
+.contenedor {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
 }
 
-.imagen-seccion img {
+/* TARJETAS */
+.card {
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+/* IMÁGENES */
+.card img {
     width: 100%;
-    max-width: 220px;
     height: 180px;
     object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #00FFFF;
+    border-radius: 15px;
+    margin-bottom: 15px;
 }
 
-/* Texto dentro de las tarjetas */
-.texto-seccion {
-    margin-top: 10px;
+/* CONTENEDOR DE BURBUJAS */
+.burbujas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding: 80px;
+}
+
+/* BURBUJA BASE */
+.bubble {
+    padding: 30px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.18);
     text-align: center;
-    color: #00FFFF;
-    text-shadow: 0 0 5px #00FFFF;
+    position: relative;
+    animation: flotar 4s ease-in-out infinite;
+    box-shadow:
+        0 0 15px rgba(255,255,255,0.3),
+        0 0 30px rgba(255,255,255,0.2);
+
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    transition: transform 0.4s, box-shadow 0.4s;
 }
 
-/* ===== Botones circulares neon ===== */
-.boton-circular {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-    border-radius: 50%;
-    text-align: center;
-    font-weight: bold;
-    text-decoration: none;
-    font-family: 'Orbitron', sans-serif;
-    background-color: #00FFFF;
-    color: #000;
-    box-shadow: 0 0 10px #00FFFF, 0 0 20px #0FF, 0 0 30px #00FFFF;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+/* ✨ BRILLO DE LA BURBUJA */
+.bubble::after {
+    content: "";
+    position: absolute;
+    inset: -6px;
+    border-radius: 50px;
+    background: linear-gradient(
+        45deg,
+        #ff9800,
+        #ffc107,
+        #ffffff
+    );
+    opacity: 0.35;
+    z-index: -1;
+    filter: blur(22px);
+    transition: opacity 0.4s;
 }
 
-.boton-circular:hover {
-    transform: scale(1.1);
-    background-color: #0FF;
-    box-shadow: 0 0 20px #00FFFF, 0 0 40px #0FF, 0 0 60px #00FFFF;
+/* MÁS BRILLO AL HOVER */
+.bubble:hover::after {
+    opacity: 0.65;
 }
 
-/* Contenedor de botones */
-.botones {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
-    flex-wrap: wrap;
+/* POSICIÓN */
+.left {
+    justify-self: start;
 }
 
-/* ===== Footer ===== */
-footer {
-    text-align: center;
-    padding: 15px 0;
-    background: rgba(0, 0, 50, 0.8);
-    color: #00FFFF;
-    font-family: 'Orbitron', sans-serif;
-    box-shadow: 0 0 15px #00FFFF;
+.right {
+    justify-self: end;
 }
 
-footer a {
-    color: #0FF;
-    text-decoration: none;
-    margin: 0 5px;
-    text-shadow: 0 0 5px #00FFFF;
+/* HOVER */
+.bubble:hover {
+    transform: scale(1.08);
+    box-shadow:
+        0 0 25px rgba(255,255,255,0.8),
+        0 0 60px rgba(255,255,255,0.6);
 }
 
-footer a:hover {
-    text-decoration: underline;
+/* ANIMACIÓN FLOTANTE */
+@keyframes flotar {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 600px) {
-    .imagen-seccion img {
-        max-width: 90%;
-        height: auto;
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .burbujas {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .left, .right {
+        justify-self: center;
     }
 }
 
+/* 🎨 COLORES DIFERENTES POR BURBUJA (OPCIONAL) */
+.bubble:nth-child(1)::after {
+    background: linear-gradient(45deg, #00e5ff, #ffffff);
+}
+
+.bubble:nth-child(2)::after {
+    background: linear-gradient(45deg, #ff4081, #ffffff);
+}
+
+.bubble:nth-child(3)::after {
+    background: linear-gradient(45deg, #7c4dff, #ffffff);
+}
+
+.bubble:nth-child(4)::after {
+    background: linear-gradient(45deg, #69f0ae, #ffffff);
+}
+
+.bubble:hover img {
+    transform: scale(1.05);
+    transition: transform 0.4s;
+}
+
+
+/* 🖼️ IMÁGENES DENTRO DE BURBUJAS */
+.bubble img {
+    width: 100%;
+    max-width: 230px;   /* MISMO ANCHO */
+    height: 220px;      /* MISMA ALTURA */
+    object-fit: cover;  /* NO SE DEFORMAN */
+    border-radius: 20px;
+    margin: 0 auto 15px; /* CENTRADAS */
+    display: block;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}

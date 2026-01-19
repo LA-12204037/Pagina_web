@@ -2,77 +2,109 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Diseño Pagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinal</title>
 
-    <!-- Variables y estilos globales -->
-    <link rel="stylesheet" href="estilo/variable.css">
     <link rel="stylesheet" href="estilo/global.css">
-
-    <!-- Layout -->
+    <link rel="stylesheet" href="estilo/variable.css">
     <link rel="stylesheet" href="layout/header/header.css">
     <link rel="stylesheet" href="layout/footer/footer.css">
-
-    <!-- Componentes -->
     <link rel="stylesheet" href="components/button/button.css">
 </head>
 
-<body>
-<body class="critica">
+<body class="body-kinal">
 
-    <!-- Encabezado -->
-    <header class="critica-header">
-        <h1>Crítica Constructiva sobre el Estilo de la Página</h1>
-        <p>Veamos cómo mejorar el diseño y la experiencia de usuario de tu página web</p>
-    </header>
+<header class="header">
+    <h1>🏫 Kinal</h1>
+    <nav>
+        <a href="index.html" class="btn">⬅ Volver</a>
+    </nav>
+</header>
 
-    <!-- Contenido de la crítica -->
-    <main class="critica-contenido">
-        <section class="card critica-card">
-            <h2>🌟 Estilo General de la Página</h2>
-            <p>lo que cambiaria fuera los colores ya que soy muy fuerte o muy saturados que pueda tener un modo oscuro o algo que cambie el color y se mas suave
-               o mas agradable a la vista poner unos tonos negros o morados o algo que protega la vista igual lo que seria los eventos o dias importantes me gustaria que esten en la pagina 
-               para mostrar que otras actividades extracurriculares 
-            </p>
-            
-            <ul>
-                <li><strong>Colores:</strong> Los colores actuales estan bieen pero tal vez hay que asegurar que el contraste entre texto y fondo sea suficiente, para mejorar la legibilidad.</li>
-                <li><strong>Interactividad:</strong> El uso de efectos y transiciones es excelente, pero debe ser moderado para no sobrecargar al usuario con demasiados movimientos. Considera mantener la simplicidad.</li>
-                <li><strong>Diseño Responsivo:</strong> Es importante que las tarjetas y las imágenes se adapten bien a pantallas móviles. Asegúrate de que la página sea completamente funcional en todos los dispositivos.</li>
-                <li><strong>Accesibilidad:</strong> Revisa las opciones de accesibilidad, como los colores para personas con discapacidad visual o agregar textos alternativos para imágenes.</li>
-            </ul>
-            
-            <p>En general, el diseño es excelente, solo algunos ajustes para hacerlo más accesible y limpio</p>
-        </section>
+<main class="burbujas">
 
-        <section class="card critica-card">
-            <h2>📊 ¿Qué mejorar?</h2>
-            <p>Algunas pequeñas sugerencias para mejorar la página:</p>
-            <ul>
-                <li><strong>Tip de Diseño:</strong> Agregar más espacio blanco en algunas áreas para evitar la sensación de "apretujamiento".</li>
-                <li><strong>Tip de Navegación:</strong> Asegúrate de que el menú desplegable sea fácil de usar en móviles, para evitar problemas de navegación.</li>
-                <li><strong>Tip de Estilo:</strong> Utilizar fuentes más legibles y tamaños adecuados para que todos los usuarios puedan leer cómodamente el contenido.</li>
-            </ul>
-            <p>Con estos cambios, tu página se verá aún más profesional y accesible para todos.</p>
-            
-        </section>
-       
+    <section class="bubble left">
+        <img src="imagenes/cap1.png" alt="Kinal">
+        <h2>1️⃣ Falta de jerarquía visual (todo compite con todo)
 
-        
+</h2>
+        <p> En las imágenes no hay un orden claro de lectura:
 
-        <section class="card botones-navegacion">
-        <h2>🔗 Navegación rápida</h2>
-        <div class="botones">
-            <a href="biografia.html" class="boton-circular">Biografía</a>
-            <a href="kinal.html" class="boton-circular">Kinal</a>
-        </div>
+El ojo no sabe dónde empezar
+
+Títulos, imágenes y bloques aparecen apilados sin prioridad
+
+La galería, el mensaje institucional y los llamados a la acción se mezclan
+
+🔴 Consecuencia: el usuario se pierde en los primeros 5 segundos.
+✅ Mejora: cada sección debe tener un solo protagonista (imagen o texto, no ambos peleando).</p>
+    </section>
+
+    <section class="bubble right">
+        <img src="imagenes/cap2.png" alt="Aprendizaje">
+        <h2>2️⃣ Uso incorrecto de imágenes (recortes sin intención)
+</h2>
+        <p>
+Se ven muchas imágenes:
+
+Cortadas a la mitad
+
+Tapadas por franjas blancas o grises
+
+Superpuestas sin alineación
+
+Esto no se percibe como diseño, sino como error visual.
+
+🔴 Consecuencia: da sensación de web rota o mal cargada.
+✅ Mejora: o imagen completa protagonista, o imagen dentro de un contenedor claro. Nunca “a medias”.</p>
+    </section>
+
+    <section class="bubble left">
+        <img src="imagenes/cap 3.png" alt="Valores">
+        <h2>3️⃣ Demasiadas franjas horizontales que rompen la experiencia</h2>
+        <p>
+
+En las capturas se repite este patrón:
+
+Imagen
+
+Franja blanca
+
+Imagen
+
+Franja azul
+
+Franja gris
+
+Imagen cortada
+
+🔴 Consecuencia: el scroll se siente pesado y confuso.
+✅ Mejora: secciones más largas y limpias, no “tiras” una tras otra.</p>
+    </section>
+
+    <section class="bubble right">
+        <img src="imagenes/cap 4.png" alt="Futuro">
+        <h2>4️⃣ La galería no parece una galería</h2>
+        <p>
+
+La sección “GALERÍA DE FOTOS”:
+
+No muestra claramente fotos
+
+Parece un collage roto
+
+El título está bien, pero el contenido no responde al título
+
+🔴 Consecuencia: el usuario no entiende qué va a ver ahí.
+✅ Mejora: una galería debe ser orden, repetición y coherencia visual, no sorpresa.</p>
     </section>
 
 </main>
 
-    <!-- Footer -->
-    <footer class="critica-footer">
-        <p>© 2026 - Página de Crítica Constructiva</p>
-    </footer>
+<footer class="footer">
+    <p>© 2026 - Kinal</p>
+</footer>
 
+<script src="js/button.js"></script>
 </body>
 </html>

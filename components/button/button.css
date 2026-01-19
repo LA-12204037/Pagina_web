@@ -1,0 +1,20 @@
+.btn {
+    text-decoration: none;
+    color: white;
+    background: var(--color-principal);
+    padding: 10px 22px;
+    border-radius: 25px;
+    margin: 5px;
+    display: inline-block;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--color-hover);
+    transform: scale(1.1);
+}
+
+.btn-click {
+    transform: scale(0.9);
+}

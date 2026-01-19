@@ -2,86 +2,61 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Página Principal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
 
-    <!-- Variables y estilos globales -->
-    <link rel="stylesheet" href="estilo/variable.css">
     <link rel="stylesheet" href="estilo/global.css">
-
-    <!-- Layout -->
+    <link rel="stylesheet" href="estilo/variable.css">
     <link rel="stylesheet" href="layout/header/header.css">
     <link rel="stylesheet" href="layout/footer/footer.css">
-
-    <!-- Componentes -->
     <link rel="stylesheet" href="components/button/button.css">
 </head>
-<body>
 
-<header>
-    <h1>Página Principal</h1>
-    <p>Descubre quién soy, mis gustos y mis hobbies</p>
+<body class="body-index">
+
+<header class="header">
+    <h1>✨ Bienvenido a Mi Página ✨</h1>
+    <nav>
+        <a href="index.html" class="btn">Inicio</a>
+        <a href="biografia.html" class="btn">Biografía</a>
+        <a href="kinal.html" class="btn">Kinal</a>
+    </nav>
 </header>
 
-<main class="container">
+<main class="burbujas">
 
-    <section class="card sobre-mi">
-        <h2>👤 Sobre mí</h2>
-        <div class="imagen-seccion">
-            <img src="imagenes/hot-wheels-pictures-olecgtqls6fmdhla.jpg" alt="Foto personal">
-            <div class="texto-seccion">
-                <p>
-                    Hola me llamo Luciano Alberto Montufar Villalta. Tengo 18 años, nací en la Ciudad Capital.
-                    Me gusta jugar videojuegos, aprender Blender, animar, dibujar, coleccionar autos, leer y cuidar animales.
-                </p>
-            </div>
-        </div>
+    <section class="bubble left">
+        <img src="imagenes/carritos.jpg" alt="Gustos">
+        <h2>Mis Gustos</h2>
+        <p>Me gusta mucho la lectura , jugar diferentes videojuegos ,dibujar aprender cosas nuevas 
+            coleccionar autos en miniatura y escuchar música clasica,electronica,rock</p>
     </section>
 
-    <section class="card gustos">
-        <h2>💚 Mis gustos</h2>
-        <div class="imagen-seccion">
-            <img src="imagenes/mmfoodcover_1080x.webp" alt="Música">
-            <img src="imagenes/istockphoto-1459715799-612x612.jpg" alt="Comida">
-        </div>
-        <div class="texto-seccion">
-            <ul>
-                <li>Me gusta casi toda la música: BMTH, ACDC, Red Hot Chili Peppers, Notorius B.I.G, MF DOOM</li>
-                <li>Me gusta conducir y ver ciudades desde miradores</li>
-                <li>Mis colores favoritos: verde, negro, blanco</li>
-            </ul>
-        </div>
+    <section class="bubble right">
+        <img src="imagenes/NCS.jpg" alt="Pasatiempos">
+        <h2>Pasatiempos</h2>
+        <p>Me gusta escuvhar musica leer sali al aire libre vivir aventuras o descubrir nuevos 
+            y hermosos lugares nuevos generos musicales .</p>
     </section>
 
-    <section class="card hobbies">
-        <h2>🎯 Mis hobbies</h2>
-        <div class="imagen-seccion">
-            <img src="imagenes/most-visually-stunning-games-on-game-boy-advance.avif" alt="Hobby">
-        </div>
-        <div class="texto-seccion">
-            <p>
-                Me gusta coleccionar autos HotWheels, cocinar y jugar en Nintendo y Steam.
-                Mis consolas favoritas: GBA, NES, WII, N64, SWITCH.
-            </p>
-        </div>
+    <section class="bubble left">
+        <img src="imagenes/japon.webp" alt="Intereses">
+        <h2>Intereses</h2>
+        <p>Aprender Ingles , Japones  conocer gente o nuevos amigo poder encontrar una carrera de mi agrado poder aprender a conducir   .</p>
     </section>
 
-    <section class="card botones-navegacion">
-        <h2>🔗 Navegación rápida</h2>
-        <div class="botones">
-            <a href="biografia.html" class="boton-circular">Biografía</a>
-            <a href="kinal.html" class="boton-circular">Kinal</a>
-        </div>
+    <section class="bubble right">
+        <img src="imagenes/Nintendo_switch_logo.png" alt="Hobbies">
+        <h2>Hobbies</h2>
+        <p>Jugar, dibujar ,escuchar musica salir a caminar cuidar animales pintar paisajes escuchar a los demas esuchar a mis comañeros  .</p>
     </section>
 
 </main>
 
-<footer>
-    <p>© 2026 - Página Principal</p>
-    <p>
-        <a href="biografia.html">Biografía</a> | 
-        <a href="kinal.html">Kinal</a>
-    </p>
+<footer class="footer">
+    <p>© 2026 - Inicio</p>
 </footer>
 
+<script src="js/button.js"></script>
 </body>
 </html>
